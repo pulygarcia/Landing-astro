@@ -6,7 +6,7 @@ interface Props {
 const { heading } = Astro.props;
 ---
 
-<section class="bg-gray-200 text-white h-screen w-full text-center relative overflow-hidden">
+<section id="main" class="section bg-gray-200 text-white h-screen w-full text-center relative overflow-hidden" data-header-color="white">
     <div class="z-30 relative h-full flex flex-col">
         <header>
             <h2 class="text-4xl font-bold pt-40">{heading}</h2>
@@ -15,8 +15,8 @@ const { heading } = Astro.props;
         
         <footer class="flex flex-col flex-grow justify-end pb-32">
             <div class="flex justify-center gap-6">
-                <a href="#" class="py-3 px-12 text-gray-900 bg-white hover:bg-gray-300">Ordenar ahora</a>
-                <a href="#" class="py-3 px-12 border border-white bg-white/10">Test manejo</a>
+                <a href="#" class="py-3 px-12 text-gray-900 bg-white hover:bg-gray-800 hover:text-white transition">Ordenar ahora</a>
+                <a href="#" class="py-3 px-12 border border-white bg-white/10 hover:bg-white hover:text-gray-900 transition">Test manejo</a>
             </div>
         </footer>
     </div>

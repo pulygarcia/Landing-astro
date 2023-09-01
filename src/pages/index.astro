@@ -3,15 +3,18 @@ import MainHeader from '../components/MainHeader.astro';
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import EnergySection from '../components/EnergySection.astro';
+import ConfortSection from '../components/ConfortSection.astro';
+import ModelSection from '../components/ModelSection.astro';
+import MessiSection from '../components/MessiSection.astro';
 ---
 
-<Layout title="Make by Puly with Astro">
+<Layout title="Make by Puly with Astro & Tailwind">
 	
 	<MainHeader />
 	
 	<main class="relative overflow-auto snap-y snap-mandatory h-screen w-full">
 		<div class="snap-center">
-			<Hero heading='Conocé los Tope de Gama'/>
+			<Hero heading='Descubrí la tecnología hoy'/>
 		</div>
 
 		<div class="snap-center">
@@ -19,7 +22,15 @@ import EnergySection from '../components/EnergySection.astro';
 		</div>
 
 		<div class="snap-center">
-			<Hero heading='Algún otro modelo'/>
+			<ConfortSection heading='Interior del futuro'/>
+		</div>
+
+		<div class="snap-center">
+			<ModelSection heading='Vip Gama'/>
+		</div>
+
+		<div class="snap-center">
+			<MessiSection heading='Campeón del mundo'/>
 		</div>
 	</main>
 
