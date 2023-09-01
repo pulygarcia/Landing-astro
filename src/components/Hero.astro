@@ -1,0 +1,27 @@
+---
+interface Props {
+	heading: string;
+}
+
+const { heading } = Astro.props;
+---
+
+<section class="bg-gray-200 text-white h-screen w-full text-center relative overflow-hidden">
+    <div class="z-30 relative h-full flex flex-col">
+        <header>
+            <h2 class="text-4xl font-bold pt-40">{heading}</h2>
+            <p class="text-sm mt-2">¡Coordiná una prueba de manejo!</p>
+        </header>
+        
+        <footer class="flex flex-col flex-grow justify-end pb-32">
+            <div class="flex justify-center gap-6">
+                <a href="#" class="py-3 px-12 text-gray-900 bg-white hover:bg-gray-300">Ordenar ahora</a>
+                <a href="#" class="py-3 px-12 border border-white bg-white/10">Test manejo</a>
+            </div>
+        </footer>
+    </div>
+
+    <div class="absolute top-0 bottom-0">
+        <video class="object-center object-cover h-full w-screen" src="/video-tesla.mp4" autoplay loop muted></video>
+    </div>
+</section>
